@@ -36,13 +36,17 @@ internal static class GameApp
             var dt = Raylib.GetFrameTime();
 
             hudView.Update(dt);
-            boardView.Update(dt);
-            presenter.TriggerBotActionIfNeeded();
+            if (hudView.ShowBoard)
+            {
+                boardView.Update(dt);
+                presenter.TriggerBotActionIfNeeded();
+            }
 
             Raylib.BeginDrawing();
             Raylib.ClearBackground(new Raylib_cs.Color(238, 228, 210, 255));
             hudView.Draw(font);
-            boardView.Draw(font);
+            if (hudView.ShowBoard)
+                boardView.Draw(font);
             Raylib.EndDrawing();
         }
 
