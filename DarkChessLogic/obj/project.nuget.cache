@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "3xLgVHfzGEU=",
+  "dgSpecHash": "dyHlQ0jJKhE=",
   "success": true,
   "projectFilePath": "C:\\Users\\Nick\\RiderProjects\\ConsoleApp1\\DarkChessLogic\\DarkChessLogic.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Nick\\.nuget\\packages\\raylib-cs\\8.0.0\\raylib-cs.8.0.0.nupkg.sha512"
+    "C:\\Users\\Nick\\.nuget\\packages\\raylib-cs\\8.0.0\\raylib-cs.8.0.0.nupkg.sha512",
+    "C:\\Users\\Nick\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.17\\microsoft.netcore.app.ref.9.0.17.nupkg.sha512",
+    "C:\\Users\\Nick\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.17\\microsoft.windowsdesktop.app.ref.9.0.17.nupkg.sha512",
+    "C:\\Users\\Nick\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.17\\microsoft.aspnetcore.app.ref.9.0.17.nupkg.sha512",
+    "C:\\Users\\Nick\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.17\\microsoft.netcore.app.host.win-x64.9.0.17.nupkg.sha512"
   ],
   "logs": []
 }

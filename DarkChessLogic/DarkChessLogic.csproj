@@ -14,6 +14,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DarkChessCore\DarkChessCore.csproj" />
+      <ProjectReference Include="..\DarkChessUiRule\DarkChessUI\DarkChessUI.csproj" />
     </ItemGroup>
 
 </Project>

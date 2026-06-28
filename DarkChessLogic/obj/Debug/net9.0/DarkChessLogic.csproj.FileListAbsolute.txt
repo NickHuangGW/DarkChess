@@ -22,3 +22,5 @@ C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessLogic\obj\Debug\net9.0\refint\D
 C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessLogic\obj\Debug\net9.0\DarkChessLogic.pdb
 C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessLogic\obj\Debug\net9.0\DarkChessLogic.genruntimeconfig.cache
 C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessLogic\obj\Debug\net9.0\ref\DarkChessLogic.dll
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessLogic\bin\Debug\net9.0\DarkChessUI.dll
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessLogic\bin\Debug\net9.0\DarkChessUI.pdb

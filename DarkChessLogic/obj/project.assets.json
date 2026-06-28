@@ -46,6 +46,19 @@
         "runtime": {
           "bin/placeholder/DarkChessCore.dll": {}
         }
+      },
+      "DarkChessUI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "DarkChessCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DarkChessUI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DarkChessUI.dll": {}
+        }
       }
     }
   },
@@ -76,11 +89,17 @@
       "type": "project",
       "path": "../DarkChessCore/DarkChessCore.csproj",
       "msbuildProject": "../DarkChessCore/DarkChessCore.csproj"
+    },
+    "DarkChessUI/1.0.0": {
+      "type": "project",
+      "path": "../DarkChessUiRule/DarkChessUI/DarkChessUI.csproj",
+      "msbuildProject": "../DarkChessUiRule/DarkChessUI/DarkChessUI.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "DarkChessCore >= 1.0.0",
+      "DarkChessUI >= 1.0.0",
       "Raylib-cs >= 8.0.0"
     ]
   },
@@ -110,7 +129,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -119,6 +137,9 @@
           "projectReferences": {
             "C:\\Users\\Nick\\RiderProjects\\ConsoleApp1\\DarkChessCore\\DarkChessCore.csproj": {
               "projectPath": "C:\\Users\\Nick\\RiderProjects\\ConsoleApp1\\DarkChessCore\\DarkChessCore.csproj"
+            },
+            "C:\\Users\\Nick\\RiderProjects\\ConsoleApp1\\DarkChessUiRule\\DarkChessUI\\DarkChessUI.csproj": {
+              "projectPath": "C:\\Users\\Nick\\RiderProjects\\ConsoleApp1\\DarkChessUiRule\\DarkChessUI\\DarkChessUI.csproj"
             }
           }
         }
@@ -133,7 +154,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -155,12 +176,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.17, 9.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[9.0.17, 9.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[9.0.17, 9.0.17]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[9.0.17, 9.0.17]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Nick\\.dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -17,28 +17,110 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdd47b90-562e-4b23-8b58-3003063e52b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DarkChessLogic/ARCHITECTURE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DarkChessUiRule/UI_ARCHITECTURE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChess.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChess.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DarkChessLogic/Banqi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/bin/Debug/net9.0/DarkChessCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/bin/Debug/net9.0/DarkChessCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/bin/Debug/net9.0/DarkChessCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/bin/Debug/net9.0/DarkChessCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/DarkChessCore.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/DarkChessCore.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/DarkChessCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/ref/DarkChessCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/ref/DarkChessCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/refint/DarkChessCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/Debug/net9.0/refint/DarkChessCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessCore/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessCore/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/DarkChessLogic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/DarkChessLogic.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DarkChessLogic/Pieces.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DarkChessLogic/SelfTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/SelfTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/DarkChessLogic.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/DarkChessLogic.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/DarkChessLogic.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/DarkChessLogic.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/ref/DarkChessLogic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/ref/DarkChessLogic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/refint/DarkChessLogic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/refint/DarkChessLogic.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/bin/Debug/net9.0/DarkChessCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/bin/Debug/net9.0/DarkChessCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/bin/Debug/net9.0/DarkChessCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/bin/Debug/net9.0/DarkChessCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/bin/Debug/net9.0/DarkChessTests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/bin/Debug/net9.0/DarkChessTests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/bin/Debug/net9.0/DarkChessTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/bin/Debug/net9.0/DarkChessTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/bin/Debug/net9.0/DarkChessTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/bin/Debug/net9.0/DarkChessTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/DarkChessTests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/DarkChessTests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/DarkChessTests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/DarkChessTests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/DarkChessTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/ref/DarkChessTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/ref/DarkChessTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/refint/DarkChessTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/Debug/net9.0/refint/DarkChessTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessTests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessTests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/bin/Debug/net9.0/DarkChessCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/bin/Debug/net9.0/DarkChessCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/bin/Debug/net9.0/DarkChessCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/bin/Debug/net9.0/DarkChessCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/bin/Debug/net9.0/DarkChessUI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/bin/Debug/net9.0/DarkChessUI.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/bin/Debug/net9.0/DarkChessUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/bin/Debug/net9.0/DarkChessUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/bin/Debug/net9.0/DarkChessUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/bin/Debug/net9.0/DarkChessUI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/DarkChessUI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/DarkChessUI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/DarkChessUI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/DarkChessUI.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/DarkChessUI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/ref/DarkChessUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/ref/DarkChessUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/refint/DarkChessUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/Debug/net9.0/refint/DarkChessUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessUI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessUITests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessUITests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessUITests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessUITests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessUITests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/bin/Debug/net9.0/DarkChessUITests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/DarkChessUITests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/DarkChessUITests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/DarkChessUITests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/DarkChessUITests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/DarkChessUITests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/ref/DarkChessUITests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/ref/DarkChessUITests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/refint/DarkChessUITests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/Debug/net9.0/refint/DarkChessUITests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessUiRule/DarkChessUITests/obj/project.nuget.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,23 +150,23 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000108769" />
-      <entry key="MS500" value="1.0074183353483734" />
-      <entry key="S2" value="1.8088815424011002" />
-      <entry key="S5" value="4.253817592236852" />
-      <entry key="S10" value="7.010353211478765" />
-      <entry key="S30" value="11.144854338208813" />
-      <entry key="S60" value="12.842928223837268" />
-      <entry key="M2" value="13.87972578249929" />
-      <entry key="M5" value="15.777053860008326" />
-      <entry key="M10" value="19.54313657747859" />
-      <entry key="M15" value="22.671362487788972" />
-      <entry key="M30" value="28.960058032025938" />
-      <entry key="H1" value="35.08515013038844" />
-      <entry key="H2" value="39.70124715969196" />
-      <entry key="H4" value="42.597637405602136" />
-      <entry key="D1" value="45.39338733730238" />
-      <entry key="W1" value="45.9123084938621" />
+      <entry key="MS100" value="1.007041019239173" />
+      <entry key="MS500" value="1.3730919943104787" />
+      <entry key="S2" value="2.0707071587782533" />
+      <entry key="S5" value="2.8063236234028004" />
+      <entry key="S10" value="3.2878189478169757" />
+      <entry key="S30" value="3.7302654768330337" />
+      <entry key="S60" value="3.8605767368394575" />
+      <entry key="M2" value="3.929106661227156" />
+      <entry key="M5" value="3.971365879956613" />
+      <entry key="M10" value="4.00301254356375" />
+      <entry key="M15" value="4.200103838963511" />
+      <entry key="M30" value="6.780394166922081" />
+      <entry key="H1" value="14.878163758934765" />
+      <entry key="H2" value="26.107753897962372" />
+      <entry key="H4" value="35.78771717888186" />
+      <entry key="D1" value="47.231993142676366" />
+      <entry key="W1" value="49.59344154065977" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -106,23 +188,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.3770485502025324E-6" />
-      <entry key="MS500" value="0.07460445642668097" />
-      <entry key="S2" value="1.312502691296321" />
-      <entry key="S5" value="4.007447238697384" />
-      <entry key="S10" value="6.875668945234503" />
-      <entry key="S30" value="11.096637726687794" />
-      <entry key="S60" value="12.818319357501846" />
-      <entry key="M2" value="13.867285823663797" />
-      <entry key="M5" value="15.772022872942625" />
-      <entry key="M10" value="19.540584080196552" />
-      <entry key="M15" value="22.66963981880153" />
-      <entry key="M30" value="28.959170983958085" />
-      <entry key="H1" value="35.084690772151376" />
-      <entry key="H2" value="39.70101062570177" />
-      <entry key="H4" value="42.59751683029214" />
-      <entry key="D1" value="45.39336685361121" />
-      <entry key="W1" value="45.91230555710526" />
+      <entry key="MS100" value="0.9726549658853947" />
+      <entry key="MS500" value="1.0248142832484635" />
+      <entry key="S2" value="1.698688150482827" />
+      <entry key="S5" value="2.599711001086215" />
+      <entry key="S10" value="3.1721804570764265" />
+      <entry key="S30" value="3.6886664565286473" />
+      <entry key="S60" value="3.8393741808858017" />
+      <entry key="M2" value="3.918402934787185" />
+      <entry key="M5" value="3.9670595783445366" />
+      <entry key="M10" value="4.000852971239825" />
+      <entry key="M15" value="4.198648779926489" />
+      <entry key="M30" value="6.779588831058643" />
+      <entry key="H1" value="14.877661175024427" />
+      <entry key="H2" value="26.107442083107657" />
+      <entry key="H4" value="35.787537146270495" />
+      <entry key="D1" value="47.23195862430014" />
+      <entry key="W1" value="49.5934364799928" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -154,6 +236,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
@@ -207,7 +290,7 @@
       <workItem from="1782037428463" duration="9247000" />
       <workItem from="1782602520143" duration="145000" />
       <workItem from="1782602900372" duration="619000" />
-      <workItem from="1782603586266" duration="8364000" />
+      <workItem from="1782603586266" duration="10309000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <option name="closed" value="true" />
@@ -217,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782607821006</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add darkChess UI">
+      <option name="closed" value="true" />
+      <created>1782613895365</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782613895365</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +319,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="create project" />
+    <MESSAGE value="add darkChess UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="add darkChess UI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

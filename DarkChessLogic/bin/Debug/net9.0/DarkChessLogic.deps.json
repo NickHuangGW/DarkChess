@@ -9,6 +9,7 @@
       "DarkChessLogic/1.0.0": {
         "dependencies": {
           "DarkChessCore": "1.0.0",
+          "DarkChessUI": "1.0.0",
           "Raylib-cs": "8.0.0"
         },
         "runtime": {
@@ -53,7 +54,18 @@
       "DarkChessCore/1.0.0": {
         "runtime": {
           "DarkChessCore.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DarkChessUI/1.0.0": {
+        "dependencies": {
+          "DarkChessCore": "1.0.0"
+        },
+        "runtime": {
+          "DarkChessUI.dll": {
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -74,6 +86,11 @@
       "hashPath": "raylib-cs.8.0.0.nupkg.sha512"
     },
     "DarkChessCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DarkChessUI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
