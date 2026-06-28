@@ -1,4 +1,4 @@
-namespace ConsoleApp1;
+namespace DarkChess.Core;
 
 /// <summary>棋盤上一格的狀態。</summary>
 public sealed class Cell

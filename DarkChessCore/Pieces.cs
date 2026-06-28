@@ -1,4 +1,4 @@
-namespace ConsoleApp1;
+namespace DarkChess.Core;
 
 public enum Color
 {

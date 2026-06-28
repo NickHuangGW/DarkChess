@@ -1,3 +1,5 @@
+using DarkChess.Core;
+
 namespace ConsoleApp1;
 
 /// <summary>規則邏輯檢驗。以 `dotnet run -- --test` 執行，全數通過印出 ALL PASS。</summary>

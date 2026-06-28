@@ -1,15 +1,22 @@
 using System.Numerics;
-using ConsoleApp1;
 using Raylib_cs;
-using Color = ConsoleApp1.Color;
+using DarkChess.Core;
+using Color = DarkChess.Core.Color;
 using RColor = Raylib_cs.Color;
 
 // --test 模式：只跑邏輯檢驗，不開視窗
 if (args.Contains("--test"))
-    return SelfTest.Run();
+    return ConsoleApp1.SelfTest.Run();
 
 GameApp.Run();
 return 0;
+
+internal enum GameMode
+{
+    None,
+    PvP,    // 玩家對玩家
+    PvBot   // 玩家對電腦
+}
 
 internal static class GameApp
 {
@@ -27,18 +34,80 @@ internal static class GameApp
         Raylib.SetTargetFPS(60);
 
         var font = LoadChineseFont(48);
+        var gameMode = GameMode.None;
+        BotPlayer? bot = null;
+        Color? playerColor = null;
         var game = new Banqi();
-        var selected = -1;                 // 目前選取的己方棋子格，-1 為無
-        var moves = new List<Move>();      // selected 的合法目的地
+        var selected = -1;
+        var moves = new List<Move>();
+        var botThinking = false;
+        var botThinkTimer = 0f;
 
         while (!Raylib.WindowShouldClose())
         {
+            var dt = Raylib.GetFrameTime();
+
+            // --- 選擇模式畫面 ---
+            if (gameMode == GameMode.None)
+            {
+                Raylib.BeginDrawing();
+                Raylib.ClearBackground(new RColor(238, 228, 210, 255));
+                DrawModeSelection(font, ref gameMode, ref bot, ref playerColor, game);
+                Raylib.EndDrawing();
+                continue;
+            }
+
+            // --- Bot 思考延遲 ---
+            if (botThinking)
+            {
+                botThinkTimer -= dt;
+                if (botThinkTimer <= 0)
+                {
+                    var action = bot!.ChooseAction(game);
+                    if (action.Kind == ActionKind.Flip)
+                        game.Flip(action.From);
+                    else
+                        game.TryMove(action.From, action.To);
+                    
+                    botThinking = false;
+                    selected = -1;
+                    moves.Clear();
+                }
+                
+                Raylib.BeginDrawing();
+                Raylib.ClearBackground(new RColor(238, 228, 210, 255));
+                DrawTopBar(font, game);
+                DrawBoard(font, game, selected, moves);
+                DrawText(font, "電腦思考中...", new Vector2(ScreenW / 2 - 80, ScreenH / 2), 24, new RColor(200, 60, 60, 255));
+                Raylib.EndDrawing();
+                continue;
+            }
+
+            // --- 檢查是否輪到 Bot ---
+            if (gameMode == GameMode.PvBot && bot is not null && game.Winner is null)
+            {
+                if (game.CurrentColor == bot.BotColor || (!game.FirstMoveDone))
+                {
+                    botThinking = true;
+                    botThinkTimer = 0.5f; // 延遲 0.5 秒
+                    Raylib.BeginDrawing();
+                    Raylib.ClearBackground(new RColor(238, 228, 210, 255));
+                    DrawTopBar(font, game);
+                    DrawBoard(font, game, selected, moves);
+                    Raylib.EndDrawing();
+                    continue;
+                }
+            }
+
             // --- 輸入 ---
             if (Raylib.IsKeyPressed(KeyboardKey.R))
             {
+                gameMode = GameMode.None;
                 game.Reset();
                 selected = -1;
                 moves.Clear();
+                bot = null;
+                playerColor = null;
             }
 
             if (game.Winner is null && Raylib.IsMouseButtonPressed(MouseButton.Left))
@@ -60,6 +129,44 @@ internal static class GameApp
 
         Raylib.UnloadFont(font);
         Raylib.CloseWindow();
+    }
+
+    private static void DrawModeSelection(Font font, ref GameMode mode, ref BotPlayer? bot, ref Color? playerColor, Banqi game)
+    {
+        DrawText(font, "暗棋 Dark Chess", new Vector2(ScreenW / 2 - 140, 80), 40, new RColor(60, 40, 30, 255));
+        DrawText(font, "選擇遊戲模式", new Vector2(ScreenW / 2 - 100, 140), 28, new RColor(110, 90, 70, 255));
+
+        var pvpRect = new Rectangle(ScreenW / 2 - 120, 200, 240, 60);
+        var pvBotRect = new Rectangle(ScreenW / 2 - 120, 280, 240, 60);
+
+        // PvP 按鈕
+        var pvpHover = Raylib.CheckCollisionPointRec(Raylib.GetMousePosition(), pvpRect);
+        Raylib.DrawRectangleRec(pvpRect, pvpHover ? new RColor(200, 180, 150, 255) : new RColor(220, 200, 170, 255));
+        Raylib.DrawRectangleLinesEx(pvpRect, 3, new RColor(100, 80, 60, 255));
+        DrawText(font, "玩家對玩家", new Vector2(pvpRect.X + 40, pvpRect.Y + 15), 28, new RColor(60, 40, 30, 255));
+
+        // PvBot 按鈕
+        var pvBotHover = Raylib.CheckCollisionPointRec(Raylib.GetMousePosition(), pvBotRect);
+        Raylib.DrawRectangleRec(pvBotRect, pvBotHover ? new RColor(200, 180, 150, 255) : new RColor(220, 200, 170, 255));
+        Raylib.DrawRectangleLinesEx(pvBotRect, 3, new RColor(100, 80, 60, 255));
+        DrawText(font, "對戰電腦", new Vector2(pvBotRect.X + 60, pvBotRect.Y + 15), 28, new RColor(60, 40, 30, 255));
+
+        if (Raylib.IsMouseButtonPressed(MouseButton.Left))
+        {
+            if (pvpHover)
+            {
+                mode = GameMode.PvP;
+            }
+            else if (pvBotHover)
+            {
+                mode = GameMode.PvBot;
+                // Bot 扮演黑方，玩家先手翻紅
+                bot = new BotPlayer(Color.Black, searchDepth: 3);
+                playerColor = Color.Red;
+            }
+        }
+
+        DrawText(font, "按 R 返回選單", new Vector2(ScreenW / 2 - 90, 380), 20, new RColor(140, 120, 100, 255));
     }
 
     private static void HandleClick(Banqi game, int cell, ref int selected, List<Move> moves)

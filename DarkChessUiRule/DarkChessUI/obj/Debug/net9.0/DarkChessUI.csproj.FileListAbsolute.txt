@@ -1,0 +1,15 @@
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\bin\Debug\net9.0\DarkChessUI.deps.json
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\bin\Debug\net9.0\DarkChessUI.dll
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\bin\Debug\net9.0\DarkChessUI.pdb
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\bin\Debug\net9.0\DarkChessCore.dll
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\bin\Debug\net9.0\DarkChessCore.pdb
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\obj\Debug\net9.0\DarkChessUI.csproj.AssemblyReference.cache
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\obj\Debug\net9.0\DarkChessUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\obj\Debug\net9.0\DarkChessUI.AssemblyInfoInputs.cache
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\obj\Debug\net9.0\DarkChessUI.AssemblyInfo.cs
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\obj\Debug\net9.0\DarkChessUI.csproj.CoreCompileInputs.cache
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\obj\Debug\net9.0\DarkChes.1151FB4C.Up2Date
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\obj\Debug\net9.0\DarkChessUI.dll
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\obj\Debug\net9.0\refint\DarkChessUI.dll
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\obj\Debug\net9.0\DarkChessUI.pdb
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessUiRule\DarkChessUI\obj\Debug\net9.0\ref\DarkChessUI.dll

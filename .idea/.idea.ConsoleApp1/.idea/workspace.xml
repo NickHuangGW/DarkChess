@@ -6,6 +6,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="claude-sonnet-4.6" />
+  </component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
@@ -13,7 +16,30 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdd47b90-562e-4b23-8b58-3003063e52b1" name="Changes" comment="" />
+    <list default="true" id="fdd47b90-562e-4b23-8b58-3003063e52b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DarkChessLogic/ARCHITECTURE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DarkChessUiRule/UI_ARCHITECTURE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChess.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChess.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/Banqi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/DarkChessLogic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/DarkChessLogic.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/Pieces.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/SelfTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/SelfTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/bin/Debug/net9.0/DarkChessLogic.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/DarkChessLogic.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/DarkChessLogic.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/DarkChessLogic.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/DarkChessLogic.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/DarkChessLogic.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DarkChessLogic/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DarkChessLogic/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,25 +65,26 @@
     <commands />
     <urls />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0001040815003328" />
-      <entry key="MS500" value="1.1716612997403686" />
-      <entry key="S2" value="2.270210874444489" />
-      <entry key="S5" value="3.8589651077287583" />
-      <entry key="S10" value="5.477297140075016" />
-      <entry key="S30" value="7.855202021148301" />
-      <entry key="S60" value="8.80942675283189" />
-      <entry key="M2" value="9.396928984012362" />
-      <entry key="M5" value="11.013449409857255" />
-      <entry key="M10" value="14.692677472468663" />
-      <entry key="M15" value="17.788529872026455" />
-      <entry key="M30" value="24.036240974101073" />
-      <entry key="H1" value="30.13182006181199" />
-      <entry key="H2" value="34.72781546183717" />
-      <entry key="H4" value="37.6119360102209" />
-      <entry key="D1" value="40.39593364216094" />
-      <entry key="W1" value="40.91267657921046" />
+      <entry key="MS100" value="1.0000000000108769" />
+      <entry key="MS500" value="1.0074183353483734" />
+      <entry key="S2" value="1.8088815424011002" />
+      <entry key="S5" value="4.253817592236852" />
+      <entry key="S10" value="7.010353211478765" />
+      <entry key="S30" value="11.144854338208813" />
+      <entry key="S60" value="12.842928223837268" />
+      <entry key="M2" value="13.87972578249929" />
+      <entry key="M5" value="15.777053860008326" />
+      <entry key="M10" value="19.54313657747859" />
+      <entry key="M15" value="22.671362487788972" />
+      <entry key="M30" value="28.960058032025938" />
+      <entry key="H1" value="35.08515013038844" />
+      <entry key="H2" value="39.70124715969196" />
+      <entry key="H4" value="42.597637405602136" />
+      <entry key="D1" value="45.39338733730238" />
+      <entry key="W1" value="45.9123084938621" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -79,23 +106,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9527378396920781" />
-      <entry key="MS500" value="1.160565863185794" />
-      <entry key="S2" value="2.2648890661570795" />
-      <entry key="S5" value="3.855238028625177" />
-      <entry key="S10" value="5.474605238763923" />
-      <entry key="S30" value="7.853900611884122" />
-      <entry key="S60" value="8.808695365651248" />
-      <entry key="M2" value="9.39653846935629" />
-      <entry key="M5" value="11.013265277070449" />
-      <entry key="M10" value="14.692552878089108" />
-      <entry key="M15" value="17.78842681198652" />
-      <entry key="M30" value="24.036164248224477" />
-      <entry key="H1" value="30.131766007583426" />
-      <entry key="H2" value="34.727781621832044" />
-      <entry key="H4" value="37.611916793987305" />
-      <entry key="D1" value="40.39593005352915" />
-      <entry key="W1" value="40.91267605608284" />
+      <entry key="MS100" value="1.3770485502025324E-6" />
+      <entry key="MS500" value="0.07460445642668097" />
+      <entry key="S2" value="1.312502691296321" />
+      <entry key="S5" value="4.007447238697384" />
+      <entry key="S10" value="6.875668945234503" />
+      <entry key="S30" value="11.096637726687794" />
+      <entry key="S60" value="12.818319357501846" />
+      <entry key="M2" value="13.867285823663797" />
+      <entry key="M5" value="15.772022872942625" />
+      <entry key="M10" value="19.540584080196552" />
+      <entry key="M15" value="22.66963981880153" />
+      <entry key="M30" value="28.959170983958085" />
+      <entry key="H1" value="35.084690772151376" />
+      <entry key="H2" value="39.70101062570177" />
+      <entry key="H4" value="42.59751683029214" />
+      <entry key="D1" value="45.39336685361121" />
+      <entry key="W1" value="45.91230555710526" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -106,11 +133,11 @@
   <component name="ProjectSessionTemplates">
     <option name="panelTemplate">
       <template>
-        <option name="modeId" value="Agent" />
+        <option name="modeId" value="plan" />
         <option name="model">
           <model>
             <option name="modelType" value="builtin_family" />
-            <option name="modelValue" value="auto" />
+            <option name="modelValue" value="claude-sonnet-4.6" />
           </model>
         </option>
         <option name="targetType" value="BACKGROUND" />
@@ -121,28 +148,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.ConsoleApp1.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.ConsoleApp1.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -180,16 +207,28 @@
       <workItem from="1782037428463" duration="9247000" />
       <workItem from="1782602520143" duration="145000" />
       <workItem from="1782602900372" duration="619000" />
-      <workItem from="1782603586266" duration="2951000" />
+      <workItem from="1782603586266" duration="8364000" />
     </task>
+    <task id="LOCAL-00001" summary="create project">
+      <option name="closed" value="true" />
+      <created>1782607821006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782607821006</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="create project" />
+    <option name="LAST_COMMIT_MESSAGE" value="create project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,0 +1,11 @@
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessCore\bin\Debug\net9.0\DarkChessCore.deps.json
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessCore\bin\Debug\net9.0\DarkChessCore.dll
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessCore\bin\Debug\net9.0\DarkChessCore.pdb
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessCore\obj\Debug\net9.0\DarkChessCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessCore\obj\Debug\net9.0\DarkChessCore.AssemblyInfoInputs.cache
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessCore\obj\Debug\net9.0\DarkChessCore.AssemblyInfo.cs
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessCore\obj\Debug\net9.0\DarkChessCore.csproj.CoreCompileInputs.cache
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessCore\obj\Debug\net9.0\DarkChessCore.dll
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessCore\obj\Debug\net9.0\refint\DarkChessCore.dll
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessCore\obj\Debug\net9.0\DarkChessCore.pdb
+C:\Users\Nick\RiderProjects\ConsoleApp1\DarkChessCore\obj\Debug\net9.0\ref\DarkChessCore.dll
