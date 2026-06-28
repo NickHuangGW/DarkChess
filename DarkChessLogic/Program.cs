@@ -57,9 +57,15 @@ internal static class GameApp
     /// <summary>載入含中文字符的標楷體；找不到則退回 raylib 預設字型。</summary>
     private static Font LoadChineseFont(int size)
     {
-        var sb = "帥仕相俥傌炮兵將士象車馬包卒"
-                 + "暗棋輪到請翻開始紅方黑方勝先手換行動移子吃被光無可動點任格即為你"
-                 + "重新按勝利電腦對戰玩家模式選擇思考中重置獲，。（）！";
+        // ASCII 可顯示字元 (32–126)
+        var ascii = string.Concat(Enumerable.Range(32, 95).Select(c => (char)c));
+
+        // 所有需要的中文字（含棋子字面、UI 文字）
+        var chinese = "帥仕相俥傌炮兵將士象車馬包卒"
+                    + "暗棋輪到請翻開始紅方黑方勝先手換行動移子吃被光無可動點任格即為你"
+                    + "重新按勝利電腦對戰玩家模式選擇思考中重置獲遊戲，。（）！";
+
+        var sb = ascii + chinese;
         var codepoints = sb.Distinct().Select(ch => (int)ch).ToArray();
 
         var path = "C:/Windows/Fonts/kaiu.ttf";

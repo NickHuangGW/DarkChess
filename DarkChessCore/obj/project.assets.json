@@ -1,10 +1,12 @@
 {
   "version": 3,
   "targets": {
+    ".NETStandard,Version=v2.1": {},
     "net9.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [],
     "net9.0": []
   },
   "packageFolders": {
@@ -20,6 +22,7 @@
       "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Nick\\RiderProjects\\ConsoleApp1\\DarkChessCore\\obj\\",
       "projectStyle": "PackageReference",
+      "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
@@ -29,7 +32,8 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net9.0"
+        "net9.0",
+        "netstandard2.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -39,6 +43,10 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "projectReferences": {}
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "projectReferences": {}
         }
       },
@@ -74,6 +82,26 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+      },
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "NETStandard.Library": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

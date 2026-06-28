@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DarkChessTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+439e2b4b0668d4fd022b94f856df8a456870670a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aed430ea6949da709641e1441e28f0f8d5acdaf0")]
 [assembly: System.Reflection.AssemblyProductAttribute("DarkChessTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DarkChessTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
