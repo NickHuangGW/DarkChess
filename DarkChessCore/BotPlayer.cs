@@ -1,8 +1,8 @@
 ﻿namespace DarkChess.Core;
 
 /// <summary>
-/// ?餉?拙振嚗蝙??Minimax + Alpha-Beta ?芣???
-/// 蝑?芸???嚗??> ?? > ?脣?鋡怠? > 蝘餃? > 蝧餅???
+/// 電腦 AI 玩家對手，採用 Minimax 演算法與 Alpha-Beta 剪枝技術。
+/// 決策優先級：贏得比賽 > 吃子 > 規避威脅 > 移動 > 翻棋。
 /// </summary>
 public sealed class BotPlayer
 {
@@ -17,40 +17,45 @@ public sealed class BotPlayer
         _rng = seed.HasValue ? new Random(seed.Value) : new Random();
     }
 
-    /// <summary>Bot ?格????脯?/summary>
+    /// <summary>取得 Bot 所屬的陣營顏色 (紅/黑)</summary>
     public Color BotColor => _botColor;
 
-    /// <summary>?豢??雿唾???/summary>
+    /// <summary>
+    /// 根據當前盤面，選擇並回傳最佳的遊戲動作 (翻棋或移動)。
+    /// </summary>
     public GameAction ChooseAction(Banqi game)
     {
         var actions = GetLegalActions(game, _botColor);
         if (actions.Count == 0)
-            throw new InvalidOperationException("?∪?瘜???瑁?");
+            throw new InvalidOperationException("沒有合法的動作可以執行");
 
         if (actions.Count == 1)
             return actions[0];
 
-        // 蝚砌??蕃璉?憿?芸?嚗璈蕃
+        // 規則特例：如果是遊戲的第一步 (盤面全蓋牌)，隨機選擇一個位置翻棋
         if (!game.FirstMoveDone)
         {
             var flips = actions.Where(a => a.Kind == ActionKind.Flip).ToList();
             return flips[_rng.Next(flips.Count)];
         }
 
-        // 撠??????怎蕃璉??瑁? Minimax嚗?雿?
+        // 初始化最佳動作與最佳分數
         var bestAction = actions[0];
         var bestScore = int.MinValue;
 
-        // 韏唳???嚗?摮???孵? Alpha-Beta ?芣???嚗?
+        // 啟發式搜尋排序：先排序動作以提升 Alpha-Beta 剪枝的效率
         var ordered = OrderActions(actions, game);
 
         foreach (var action in ordered)
         {
+            // 模擬動作：複製盤面並執行該動作
             var cloned = CloneGame(game);
             ApplyAction(cloned, action);
+            
+            // 遞迴呼叫 Minimax 取得該動作的最終評估分數
             var score = Minimax(cloned, _searchDepth - 1, int.MinValue, int.MaxValue, false);
 
-            // ??詨??璈??游像撅嚗?摰芋撘?
+            // 分數更新邏輯：如果分數一樣，有 25% 的機率替換，藉此避免 AI 行為過於固定可預測
             if (score > bestScore || (score == bestScore && _rng.Next(4) == 0))
             {
                 bestScore = score;
@@ -62,27 +67,31 @@ public sealed class BotPlayer
     }
 
     /// <summary>
-    /// 韏唳???嚗??孵澆?摮?> 雿?澆?摮?> 銝?祉宏??> 蝧餅???
-    /// ???粥瘜? Alpha-Beta ?湔?芣???
+    /// 對可行動作進行排序。
+    /// 排序邏輯：高價值吃子 > 一般移動 > 翻棋。
+    /// 目的：讓 Alpha-Beta 剪枝能更快找到好樹枝，提早砍掉不必要的搜尋分支。
     /// </summary>
     private List<GameAction> OrderActions(List<GameAction> actions, Banqi game)
     {
         return actions.OrderByDescending(a =>
         {
-            if (a.Kind == ActionKind.Flip) return -1; // 蝧餅??敺?
+            if (a.Kind == ActionKind.Flip) return -1; // 翻棋的優先度墊底
 
-            // ??嚗璅??寧蕃??摮?
+            // 如果是移動動作，檢查目標位置是否有敵方棋子 (判斷是否為吃子)
             var dst = game.Board[a.To];
             if (!dst.IsEmpty && dst.FaceUp && dst.Piece!.Value.Color != _botColor)
-                return GetPieceValue(dst.Piece!.Value.Kind) * 10; // 擃?澆?摮???
+                return GetPieceValue(dst.Piece!.Value.Kind) * 10; // 優先嘗試吃掉高價值的敵子
 
-            return 0; // 銝?祉宏??
+            return 0; // 一般的平移移動
         }).ToList();
     }
 
-    /// <summary>Minimax 瞍?瘜?+ Alpha-Beta ?芣???/summary>
+    /// <summary>
+    /// 核心演算法：Minimax 搭配 Alpha-Beta 剪枝
+    /// </summary>
     private int Minimax(Banqi game, int depth, int alpha, int beta, bool maximizing)
     {
+        // 抵達搜尋深度底層，或遊戲已分出勝負，則進行靜態盤面評估
         if (depth == 0 || game.Winner is not null)
             return Evaluate(game);
 
@@ -92,7 +101,6 @@ public sealed class BotPlayer
         if (actions.Count == 0)
             return Evaluate(game);
 
-        // 韏唳??????芣???
         var ordered = OrderActionsForColor(actions, game, currentColor);
 
         if (maximizing)
@@ -105,7 +113,7 @@ public sealed class BotPlayer
                 var eval = Minimax(cloned, depth - 1, alpha, beta, false);
                 maxEval = Math.Max(maxEval, eval);
                 alpha = Math.Max(alpha, eval);
-                if (beta <= alpha) break;
+                if (beta <= alpha) break; // Beta 剪枝
             }
             return maxEval;
         }
@@ -119,13 +127,13 @@ public sealed class BotPlayer
                 var eval = Minimax(cloned, depth - 1, alpha, beta, true);
                 minEval = Math.Min(minEval, eval);
                 beta = Math.Min(beta, eval);
-                if (beta <= alpha) break;
+                if (beta <= alpha) break; // Alpha 剪枝
             }
             return minEval;
         }
     }
 
-    /// <summary>韏唳???嚗inimax ?折嚗?憿??嚗?/summary>
+    /// <summary>為特定顏色進行動作排序 (用於 Minimax 內部遞迴)</summary>
     private List<GameAction> OrderActionsForColor(List<GameAction> actions, Banqi game, Color color)
     {
         var opponent = Banqi.Opposite(color);
@@ -140,10 +148,8 @@ public sealed class BotPlayer
     }
 
     /// <summary>
-    /// 閰摯?賣??
-    /// = ?璉?蝮賢? - 撠璉?蝮賢?
-    /// - ?鋡怠???摮蝵堆?撠銝?甇亙??
-    /// + 蝧餅?瞏???曌蝧餅??Ｙ揣鞈?嚗?
+    /// 靜態盤面評估函數 (Evaluation Function)
+    /// 計算公式 = (己方總分 - 敵方總分) - 己方受威脅扣分 + 暗棋的潛在期望值
     /// </summary>
     private int Evaluate(Banqi game)
     {
@@ -162,8 +168,8 @@ public sealed class BotPlayer
 
             if (!cell.FaceUp)
             {
-                // ?梯?璉?嚗??寥蝞?瞏???蝧餃????
-                myScore += 50; // ??銝剜?憿?????賣?瞏?孵?
+                // 注意：這裡給予未翻開的棋子固定的 +50 分，鼓勵 AI 推進遊戲
+                myScore += 50; 
                 continue;
             }
 
@@ -176,7 +182,7 @@ public sealed class BotPlayer
                 opScore += val;
         }
 
-        // ?梢璉??脩蔑嚗??寧蕃??璉??亙鋡怠??寧??喳????脩蔑
+        // 威脅評估：模擬敵方回合，檢查己方棋子是否暴露在被吃的風險中
         var savedColor = game.CurrentColor;
         game.CurrentColor = opponent;
         for (var opFrom = 0; opFrom < Banqi.Count; opFrom++)
@@ -190,17 +196,17 @@ public sealed class BotPlayer
                 var target = game.Board[m.To];
                 if (!target.IsEmpty && target.FaceUp && target.Piece!.Value.Color == _botColor)
                 {
-                    // 撠?臭誑???寥?璉??脩蔑
+                    // 己方棋子處於敵方攻擊範圍內，進行懲罰扣分 (取該棋子價值的一半)
                     dangerPenalty += GetPieceValue(target.Piece!.Value.Kind) / 2;
                 }
             }
         }
-        game.CurrentColor = savedColor;
+        game.CurrentColor = savedColor; // 復原回合狀態
 
         return (myScore - opScore) - dangerPenalty;
     }
 
-    /// <summary>璉??孵潦?/summary>
+    /// <summary>取得各階級棋子的權重分數</summary>
     private static int GetPieceValue(PieceKind kind) => kind switch
     {
         PieceKind.General  => 1000,
@@ -213,17 +219,17 @@ public sealed class BotPlayer
         _ => 0
     };
 
-    /// <summary>????銵?嚗蝧餅??粥摮???/summary>
+    /// <summary>取得當前合法的所有動作 (包含翻棋與移動/吃子)</summary>
     private List<GameAction> GetLegalActions(Banqi game, Color color)
     {
         var actions = new List<GameAction>();
 
-        // 蝧餅?
+        // 1. 蒐集所有可以翻開的暗棋
         for (var i = 0; i < Banqi.Count; i++)
             if (game.Board[i].IsHidden)
                 actions.Add(new GameAction(ActionKind.Flip, i));
 
-        // 韏啣?/??
+        // 2. 蒐集己方所有明棋的可行移動與吃子路線
         if (game.CurrentColor is not null)
         {
             var savedColor = game.CurrentColor;
